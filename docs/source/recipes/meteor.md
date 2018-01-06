@@ -342,6 +342,8 @@ const engine = new Engine({
   endpoint: '/graphql',
 });
 
+engine.start()
+
 createApolloServer(req => ({
   schema: executableSchema,
   context: {},
